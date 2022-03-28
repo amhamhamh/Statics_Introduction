@@ -30,3 +30,13 @@ table(transp)
 dat3<-data.frame(transportation=c("bus","bicycle","walking"),
                  count=c(15, 13, 4)
                  )
+
+ggplot(data=dat3) + geom_bar(mapping = aes(x="", y=count, fill=transportation), stat="identity") +
+  coord_polar("y", start=0) + xlab("")+ylab("")+
+  #전체적인 항목을 정리리
+  theme(axis.text = element_blank(),
+        axis.ticks = element_blank(),
+        panel.grid = element_blank()
+        )
+
+
