@@ -40,3 +40,9 @@ ggplot(data=dat3) + geom_bar(mapping = aes(x="", y=count, fill=transportation), 
         )
 
 
+#이항분포(당첨률 30% - 0.3 복권 8장) - 3장에서 7장이 당첨될 확률
+#pbinom(확률변수, 전체 경우의 수, 그럴 확률)
+pbinom(7, 8, 0.3) - pbinom(2, 8, 0.3)
+#총 6장이 될 확률
+1-pbinom(5, 8, 0.3)
+

@@ -10,3 +10,4 @@ ggplot(data=dat1)  + geom_bar(mapping = aes(x=fct_infreq(studentScore))) +
   xlab("staticScore")
 
 
+  
